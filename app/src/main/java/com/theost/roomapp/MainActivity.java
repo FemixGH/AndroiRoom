@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // SharedPreferences
+        int counter = PrefUtils.getInteger(this, PrefUtils.PREF_KEY_COUNTER);
+        PrefUtils.putInteger(this, PrefUtils.PREF_KEY_COUNTER, counter + 1);
+        if (counter > 2) binding.outputView.setText(String.format(getString(R.string.session), counter));
+
+        // Room
         database = Room.databaseBuilder(this, AppDatabase.class, "my_database").build();
 
         binding.getButton.setOnClickListener(view -> loadUsers());

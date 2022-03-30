@@ -7,4 +7,5 @@
     <string name="person_name">Person name</string>
     <string name="done">Done!</string>
     <string name="error">Error!</string>
+    <string name="session">Session: %d</string>
 </resources>
