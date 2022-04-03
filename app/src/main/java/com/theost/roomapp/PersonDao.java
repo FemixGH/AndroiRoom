@@ -1,5 +1,6 @@
 package com.theost.roomapp;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
@@ -21,4 +22,6 @@ public interface PersonDao {
     @Query("DELETE FROM people")
     Completable deleteAll();
 
+    @Query("SELECT * FROM people WHERE (id > 2)")
+    Single<List<PersonEntity>> sort();
 }
