@@ -1,0 +1,22 @@
+Index: app/src/main/java/com/theost/roomapp/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/theost/roomapp/MainActivity.java b/app/src/main/java/com/theost/roomapp/MainActivity.java
+--- a/app/src/main/java/com/theost/roomapp/MainActivity.java	(revision e7f3b42c305d5a00b90d86292c5b4e495d16105f)
++++ b/app/src/main/java/com/theost/roomapp/MainActivity.java	(date 1649020727296)
+@@ -10,13 +10,9 @@
+ 
+ import java.util.ArrayList;
+ import java.util.List;
+-import java.util.stream.Collectors;
+ 
+ import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+ import io.reactivex.rxjava3.disposables.CompositeDisposable;
+-import io.reactivex.rxjava3.functions.Action;
+-import io.reactivex.rxjava3.functions.Consumer;
+-import io.reactivex.rxjava3.functions.Function;
+ import io.reactivex.rxjava3.schedulers.Schedulers;
+ 
+ public class MainActivity extends AppCompatActivity {
